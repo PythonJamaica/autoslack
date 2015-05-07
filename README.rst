@@ -7,17 +7,17 @@ to a Slack community.
 
 Usage
 ---------
-To use this you will need to generate a token by visiting https://api.slack.com/web#authentication
+To use this you will need to generate a token by visiting https://api.slack.com/web#authentication, the token is passed to the autoslack.invite() method.
 
 .. image:: slacktoken.png
  
 ::
 
     import autoslack
-    autoslack.invite(group="pythonjam",token="XXXXXXXX",
-                    clientid="XXXXXXXX",
-                    secret="XXXXXXX",
+    autoslack.invite(group="pythonjam",
+                    token="XXXXXXX",
                     firstname="XXXXXXXX",
                     lastname="XXXXXXX",
                     emailaddress="XXXXXXX",
-                    channels=['XXXXX','XXXXX'])
+                    channels=['XXXXX','XXXXX']
+                    )

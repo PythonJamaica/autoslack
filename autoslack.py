@@ -3,14 +3,13 @@
 Accept first name, last name and email address of member
 Use the __name__ == '__main__' approach
 generate a timestamp for the URL
-add the ability to pass credentials (clientid, secret, token)
+add the ability to pass credentials (clientid, token, token)
 """
 usage = """
 usage: 
 import autoslack
-autoslack.invite(group="pythonjam",token="XXXXXXXX",
-                clientid="XXXXXXXX",
-                secret="XXXXXXX",
+autoslack.invite(group="pythonjam",
+                token="XXXXXXX",
                 firstname="XXXXXXXX",
                 lastname="XXXXXXX",
                 emailaddress="XXXXXXX",
@@ -23,8 +22,6 @@ import time
 
 def invite(group="",
                 token="",
-                clientid="",
-                secret="",
                 firstname="",
                 lastname="",
                 emailaddress="",
@@ -52,10 +49,11 @@ def invite(group="",
     
     r = requests.post(
                    url,
-                   data=payload,
-                   auth=(clientid,secret)
+                   data=payload
+#                   auth=(clientid,secret)
                    )
     # the print statements are here for the sake of debugging
+    return r.json()
 
 if __name__ == '__main__':
     
