@@ -7,6 +7,10 @@ to a Slack community.
 
 Usage
 ---------
+To use this you will need to generate a token by visiting https://api.slack.com/web#authentication
+
+.. image:: slacktoken.png
+ 
 ::
 
     import autoslack
