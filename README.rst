@@ -14,7 +14,7 @@ To use this you will need to generate a token by visiting https://api.slack.com/
 ::
 
     import autoslack
-    autoslack.invite(group="pythonjam",
+    autoslack.invite(group="SLACKCOMMUNITYNAME",
                     token="XXXXXXX",
                     firstname="XXXXXXXX",
                     lastname="XXXXXXX",

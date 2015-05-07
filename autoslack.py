@@ -8,7 +8,7 @@ add the ability to pass credentials (clientid, token, token)
 usage = """
 usage: 
 import autoslack
-autoslack.invite(group="pythonjam",
+autoslack.invite(group="SLACKCOMMUNITYNAME",
                 token="XXXXXXX",
                 firstname="XXXXXXXX",
                 lastname="XXXXXXX",
