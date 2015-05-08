@@ -32,6 +32,8 @@ The invite() method returns feedback from the Slack API in json format
                     )
     print(output)
 
+.. note:: The `channels` argument is optional.
+
 A script like the one above would give output similar to this
 ::  
 
