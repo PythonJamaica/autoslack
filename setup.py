@@ -23,7 +23,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.0.0dev1',
+    version='0.0.1dev1',
 
     description='AutoSlack is a simple module designed to automate some tasks for http://slack.com.',
 
