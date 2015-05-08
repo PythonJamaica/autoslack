@@ -38,7 +38,7 @@ setup(
 
     # Choose your license
     license='MIT',
-    packages=find_packages('src'),
+    packages=find_packages('src',exclude=['contrib', 'docs', 'tests*']),
     package_dir={'': 'src'},
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -72,7 +72,6 @@ setup(
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
 
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
