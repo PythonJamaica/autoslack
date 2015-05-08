@@ -19,13 +19,20 @@ To use this you will need to generate a token by visiting https://api.slack.com/
 
 .. image:: https://github.com/PythonJamaica/autoslack/raw/master/slacktoken.png
  
+The invite() method returns feedback from the Slack API in json format
 ::
 
     import autoslack
-    autoslack.invite(group="SLACKCOMMUNITYNAME",
+    output = autoslack.invite(group="SLACKCOMMUNITYNAME",
                     token="XXXXXXX",
                     firstname="XXXXXXXX",
                     lastname="XXXXXXX",
                     emailaddress="XXXXXXX",
                     channels=['XXXXX','XXXXX']
                     )
+    print(output)
+
+A script like the one above would give output similar to this
+::  
+
+    {u'ok': True}
