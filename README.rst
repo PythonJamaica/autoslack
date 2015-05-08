@@ -9,7 +9,7 @@ Usage
 ---------
 To use this you will need to generate a token by visiting https://api.slack.com/web#authentication, the token is passed to the autoslack.invite() method.
 
-.. image:: slacktoken.png
+.. image:: https://github.com/PythonJamaica/autoslack/raw/master/slacktoken.png
  
 ::
 
