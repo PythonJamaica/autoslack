@@ -38,6 +38,8 @@ setup(
 
     # Choose your license
     license='MIT',
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
